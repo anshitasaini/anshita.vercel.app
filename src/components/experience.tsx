@@ -39,10 +39,10 @@ export default function Experience() {
         </div>
         <div>
           <ImageBox 
-              image_src={"another_logo.png"}
+              image_src={"lm_logo.png"}
               onClick={() => handleClick()}
             />
-          <p className="text-xl mt-2">Intern</p>
+          <p className="text-xl mt-2">Intern - Electrical Engineering</p>
         </div>
       </div>
     </main>

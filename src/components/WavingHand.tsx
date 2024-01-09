@@ -7,7 +7,7 @@ const WavingHand = () => {
 
   const animationControls = useAnimation();
   const animation = {
-    rotate: [0, 15],
+    rotate: [0, 15, -5, 15, 0],
   };
 
   return (
@@ -38,9 +38,8 @@ const WavingHand = () => {
         setIsAnimationPlaying(false);
       }}
       transition={{
-        yoyo: 5,
-        from: 0,
-        duration: 0.5,
+        yoyo: Infinity,
+        duration: 1,
         ease: "easeInOut",
         type: "tween",
       }}

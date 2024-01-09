@@ -27,21 +27,21 @@ export default function Research() {
         time={"dec 2020 - mar 2021"}
         location={""}
         adviser={""}
-        title={"Stellar Photometry"}
-        desc={"Published our findings regarding period and classification analysis of Miras and variable stars in the Journal of the AAVSO."}
+        title={"Period Determination and Classification Analysis of 25 Pulsating Red Giants"}
+        desc={"Published our analysis of Miras and variable stars in the Journal of the AAVSO."}
     />
     <TextDesc 
         time={"jun 2020 - aug 2020"}
         location={"Summer Science Program in Astrophysics"}
         adviser={"Professor Adam Rengstorf"}
-        title={"Asteroid Orbit Determination"}
+        title={"Orbital Determination of Near-Earth Asteroid 420302 (2011 XZ1)"}
         desc={"Calculated asteroid's six orbital elements and published data in Minor Planet Center (M.P.C.) Report."}
     />
     <TextDesc 
         time={"jun 2019 - jun 2020"}
         location={"UW Ubiquitous Computing Lab"}
         adviser={"Professor Shwetak Patel"}
-        title={"Mobile Ultrasonic Sonar Exercise Sensing"}
+        title={"SEUSS: Sensing Exercises Using Smartphone Sonar"}
         desc={"Classified and counted repetitions of 14 upper-body activities using a phone's microphone."}
     />
     </main>
