@@ -21,13 +21,13 @@ const WavingHand = () => {
         fontSize: "5rem",
       }}
       animate={animationControls}
-      whileInView={() => {
+      whileInView={(() => {
         if (isFirstLoad) {
           setIsAnimationPlaying(true);
           animationControls.start(animation);
         }
         setisFirstLoad(false);
-      }}
+      }) as any}
       onHoverStart={() => {
         if (!isAnimationPlaying) {
           setIsAnimationPlaying(true);
