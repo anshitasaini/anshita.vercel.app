@@ -42,7 +42,33 @@ export default function ProgramsAndHonors() {
         {/* Honors */}
         <h1 className="text-5xl font-bold mb-6 mt-8">honors</h1>
 
-        <h1 className="text-xl font-bold">Coca-Cola Scholar</h1>
+        <ProgramDesc
+          logo_src={"coke_logo.png"}
+          title={"Coca-Cola Scholar"}
+          time={""}
+        />
+        <ProgramDesc
+          logo_src={"merit_logo.png"}
+          title={"National Merit Scholar"}
+          time={""}
+        />
+        <ProgramDesc
+          logo_src={"inspirasian_logo.png"}
+          title={"National InspirASIAN Scholar"}
+          time={""}
+        />
+        <ProgramDesc
+          logo_src={"ap_logo.png"}
+          title={"National AP Scholar"}
+          time={""}
+        />
+        <ProgramDesc
+          logo_src={"ncwit_logo.png"}
+          title={"NCWIT Aspirations in Computing WA Award"}
+          time={""}
+        />
+
+        {/* <h1 className="text-xl font-bold">Coca-Cola Scholar</h1>
         <hr className="border-t border-black w-full my-2" />
 
         <h1 className="text-xl font-bold">National InspirASIAN Scholar</h1>
@@ -57,7 +83,7 @@ export default function ProgramsAndHonors() {
         <h1 className="text-xl font-bold">
           NCWIT Aspirations in Computing Washington Award
         </h1>
-        <hr className="border-t border-black w-full my-2" />
+        <hr className="border-t border-black w-full my-2" /> */}
       </div>
     </main>
   );
