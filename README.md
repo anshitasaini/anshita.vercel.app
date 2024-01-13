@@ -1,1 +1,1 @@
-## [anshita.vercel.app](https://anshita.vercel.app/)https://anshita.vercel.app/
+## [anshita.vercel.app](https://anshita.vercel.app/)
