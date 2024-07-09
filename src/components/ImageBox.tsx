@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ImageBoxProps {
   image_src: string;
@@ -7,11 +7,19 @@ interface ImageBoxProps {
 
 const ImageBox: React.FC<ImageBoxProps> = ({ image_src, onClick }) => {
   return (
-    <div 
+    <div
       className="h-64 border-2 border-black flex justify-center items-center"
       onClick={onClick}
     >
-      <img className="max-w-full max-h-full" src={image_src} alt="comapny logo" style={{ maxWidth: '50%', maxHeight: '50%' }} />
+      <img
+        className="w-full h-full object-contain p-4"
+        src={image_src}
+        alt="company logo"
+        style={{
+          maxWidth: "min(100%, 300px)",
+          maxHeight: "50%",
+        }}
+      />
     </div>
   );
 };
