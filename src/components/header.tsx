@@ -5,7 +5,6 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import Bookshelf from "./Bookshelf";
 
 interface BookData {
   id: number;
