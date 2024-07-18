@@ -12,7 +12,7 @@ export default function Research() {
         location={"UT Austin Machine Learning Lab"}
         adviser={"Professor Sujay Sanghavi"}
         title={"Turing Scholar Honors Thesis"}
-        desc={"ColBERT-style multimodal dense retrieval using OpenAI CLIP"}
+        desc={"ColBERT-style multimodal dense retrieval using OpenAI's CLIP model."}
       />
       <TextDesc
         time={"jun 2020 - jun 2021"}

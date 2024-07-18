@@ -13,25 +13,33 @@ export default function Experience() {
       </div>
       <div className="grid grid-cols-2 gap-4 mb-8">
         <div>
+          <ImageBox image_src={"oai_logo.png"} onClick={() => handleClick()} />
+          <p className="text-base sm:text-lg md:text-xl mt-2">
+            Member of Technical Staff - ChatGPT Growth
+          </p>
+        </div>
+        <div>
           <ImageBox image_src={"nflx_logo.png"} onClick={() => handleClick()} />
-          <p className="text-base sm:text-lg md:text-xl mt-2">Intern - Network Services & Insights</p>
+          <p className="text-base sm:text-lg md:text-xl mt-2">
+            Intern - Network Services & Insights
+          </p>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-4 mb-8">
+        <div>
+          <ImageBox image_src={"meta_logo.png"} onClick={() => handleClick()} />
+          <p className="text-base sm:text-lg md:text-xl mt-2">
+            Intern - LLVM Server Compiler
+          </p>
         </div>
         <div>
           <ImageBox
             image_src={"google_logo.png"}
             onClick={() => handleClick()}
           />
-          <p className="text-base sm:text-lg md:text-xl mt-2">Intern - Google Cloud Error Reporting</p>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 gap-4 mb-8">
-        <div>
-          <ImageBox image_src={"meta_logo.png"} onClick={() => handleClick()} />
-          <p className="text-base sm:text-lg md:text-xl mt-2">Intern - LLVM Server Compiler</p>
-        </div>
-        <div>
-          <ImageBox image_src={"lm_logo.png"} onClick={() => handleClick()} />
-          <p className="text-base sm:text-lg md:text-xl mt-2">Intern - Electrical Engineering</p>
+          <p className="text-base sm:text-lg md:text-xl mt-2">
+            Intern - Google Cloud Error Reporting
+          </p>
         </div>
       </div>
     </main>
