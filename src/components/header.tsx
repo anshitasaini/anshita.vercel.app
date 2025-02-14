@@ -29,10 +29,12 @@ export default function Header() {
       </div>
       <div className="flex flex-col items-center mb-4">
         <div className="flex items-center mb-2">
-          <h1 className="text-8xl font-bold mr-4">anshita saini</h1>
+          <h1 className="text-4xl sm:text-8xl font-bold mr-4">anshita saini</h1>
           <WavingHand />
         </div>
-        <p className="text-xl mb-4">member of technical staff @ OpenAI 🚀</p>
+        <p className="text-lg sm:text-xl mb-4">
+          member of technical staff @ OpenAI 🚀
+        </p>
         <div className="flex items-center mt-4">
           <GitHubLogoIcon
             className="w-6 h-6 mr-4 cursor-pointer"

@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const WavingHand = () => {
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -10,6 +10,23 @@ const WavingHand = () => {
     rotate: [0, 15, -5, 15, 0],
   };
 
+  const [fontSize, setFontSize] = useState("5rem");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isSmallScreen = window.innerWidth < 640;
+      const isMediumScreen = window.innerWidth < 768;
+      const fontSize = isSmallScreen
+        ? "2.5rem"
+        : isMediumScreen
+        ? "4rem"
+        : "5rem";
+      setFontSize(fontSize);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <motion.div
       style={{
@@ -18,16 +35,18 @@ const WavingHand = () => {
         paddingBottom: "30px",
         paddingRight: "60px",
         display: "inline-block",
-        fontSize: "5rem",
+        fontSize: fontSize,
       }}
       animate={animationControls}
-      whileInView={(() => {
-        if (isFirstLoad) {
-          setIsAnimationPlaying(true);
-          animationControls.start(animation);
-        }
-        setisFirstLoad(false);
-      }) as any}
+      whileInView={
+        (() => {
+          if (isFirstLoad) {
+            setIsAnimationPlaying(true);
+            animationControls.start(animation);
+          }
+          setisFirstLoad(false);
+        }) as any
+      }
       onHoverStart={() => {
         if (!isAnimationPlaying) {
           setIsAnimationPlaying(true);
