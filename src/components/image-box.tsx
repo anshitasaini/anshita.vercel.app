@@ -2,7 +2,7 @@ import React from "react";
 
 interface ImageBoxProps {
   image_src: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const ImageBox: React.FC<ImageBoxProps> = ({ image_src, onClick }) => {

@@ -2,10 +2,6 @@ import React from "react";
 import ImageBox from "./image-box";
 
 export default function Experience() {
-  const handleClick = () => {
-    console.log("ImageBox clicked");
-  };
-
   return (
     <main className="flex min-h-screen flex-col relative px-8 md:px-16 lg:px-32 xl:px-64 justify-center">
       <div className="flex flex-col mb-6">
@@ -13,13 +9,13 @@ export default function Experience() {
       </div>
       <div className="grid grid-cols-2 gap-4 mb-8">
         <div>
-          <ImageBox image_src={"oai_logo.png"} onClick={() => handleClick()} />
+          <ImageBox image_src={"oai_logo.png"} />
           <p className="text-base sm:text-lg md:text-xl mt-2">
             Member of Technical Staff - ChatGPT Growth
           </p>
         </div>
         <div>
-          <ImageBox image_src={"nflx_logo.png"} onClick={() => handleClick()} />
+          <ImageBox image_src={"nflx_logo.png"} />
           <p className="text-base sm:text-lg md:text-xl mt-2">
             Intern - Network Services & Insights
           </p>
@@ -27,16 +23,13 @@ export default function Experience() {
       </div>
       <div className="grid grid-cols-2 gap-4 mb-8">
         <div>
-          <ImageBox image_src={"meta_logo.png"} onClick={() => handleClick()} />
+          <ImageBox image_src={"meta_logo.png"} />
           <p className="text-base sm:text-lg md:text-xl mt-2">
             Intern - LLVM Server Compiler
           </p>
         </div>
         <div>
-          <ImageBox
-            image_src={"google_logo.png"}
-            onClick={() => handleClick()}
-          />
+          <ImageBox image_src={"google_logo.png"} />
           <p className="text-base sm:text-lg md:text-xl mt-2">
             Intern - Google Cloud Error Reporting
           </p>

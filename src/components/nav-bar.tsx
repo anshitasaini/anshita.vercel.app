@@ -4,6 +4,15 @@ export default function NavBar() {
   return (
     <nav className="flex space-x-4">
       <ScrollLink
+        to="about-me"
+        containerId="scroll-container"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer"
+      >
+        about me
+      </ScrollLink>
+      <ScrollLink
         to="experience"
         containerId="scroll-container"
         smooth={true}

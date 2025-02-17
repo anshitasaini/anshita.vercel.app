@@ -62,6 +62,7 @@ export default function RootLayout({
         <DotNavigation
           sections={[
             { id: "header", label: "Header" },
+            { id: "about-me", label: "About Me" },
             { id: "experience", label: "Experience" },
             { id: "research", label: "Research" },
             { id: "honors", label: "Programs & Honors" },

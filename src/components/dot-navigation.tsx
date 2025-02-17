@@ -40,7 +40,7 @@ const DotNavigation: React.FC<DotNavigationProps> = ({ sections }) => {
   }, [sections]);
 
   return (
-    <div className="fixed right-4 top-1/2 transform -translate-y-1/2 mr-4">
+    <div className="fixed right-4 top-1/2 transform -translate-y-1/2 md:mr-4">
       <ul className="flex flex-col space-y-2">
         {sections.map((section) => (
           <li key={section.id}>
