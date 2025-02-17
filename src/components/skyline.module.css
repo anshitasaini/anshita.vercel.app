@@ -1,0 +1,24 @@
+.sfSkyline {
+  display: block;
+  width: 75vw;
+  height: auto;
+}
+
+.sfSkyline path {
+  fill: #000;
+  fill-opacity: 0;
+
+  stroke: #000;
+  stroke-width: 15;
+
+  stroke-dasharray: 60000;
+  stroke-dashoffset: 53000;
+
+  animation: draw-line 4s linear forwards;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

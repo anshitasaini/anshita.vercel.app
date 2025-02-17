@@ -3,7 +3,7 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
 
 export default function DownArrow() {
   const handleArrowClick = () => {
-    const workSection = document.getElementById("workSection");
+    const workSection = document.getElementById("experience");
     if (workSection) {
       workSection.scrollIntoView({
         behavior: "smooth",

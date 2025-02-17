@@ -6,13 +6,17 @@ import {
 } from "@radix-ui/react-icons";
 import { MapPin } from "lucide-react";
 
-interface ProgramDescProps {
+interface ProgramDescriptionProps {
   logo_src: string;
   title: string;
-  time: string;
+  time?: string;
 }
 
-const ProgramDesc: React.FC<ProgramDescProps> = ({ logo_src, title, time }) => {
+const ProgramDescription: React.FC<ProgramDescriptionProps> = ({
+  logo_src,
+  title,
+  time,
+}) => {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between">
@@ -41,4 +45,4 @@ const ProgramDesc: React.FC<ProgramDescProps> = ({ logo_src, title, time }) => {
   );
 };
 
-export default ProgramDesc;
+export default ProgramDescription;

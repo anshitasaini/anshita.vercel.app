@@ -6,7 +6,7 @@ import {
 } from "@radix-ui/react-icons";
 import { MapPin } from "lucide-react";
 
-interface TextDescProps {
+interface TextDescriptionProps {
   time: string;
   location: string;
   adviser: string;
@@ -14,7 +14,7 @@ interface TextDescProps {
   desc: string;
 }
 
-const TextDesc: React.FC<TextDescProps> = ({
+const TextDescription: React.FC<TextDescriptionProps> = ({
   time,
   location,
   adviser,
@@ -50,4 +50,4 @@ const TextDesc: React.FC<TextDescProps> = ({
   );
 };
 
-export default TextDesc;
+export default TextDescription;

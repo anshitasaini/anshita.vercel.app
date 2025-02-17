@@ -5,25 +5,28 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import Header from "@/components/header";
 import Experience from "@/components/experience";
 import Research from "@/components/research";
-import ProgramsAndHonors from "@/components/ProgramsAndHonors";
+import ProgramsAndHonors from "@/components/honors";
 
 export default function Home() {
   return (
-    <div className="snap-y snap-mandatory h-screen w-screen overflow-auto">
-      <div className="snap-start">
+    <div
+      id="scroll-container"
+      className="snap-y snap-mandatory scroll-smooth h-screen w-screen overflow-auto"
+    >
+      <Element name="header" id="header" className="snap-start">
         <Header />
-      </div>
-      <Element name="workSection" id="workSection">
+      </Element>
+      <Element name="experience" id="experience">
         <div className="snap-start">
           <Experience />
         </div>
       </Element>
-      <div className="snap-start">
+      <Element name="research" id="research" className="snap-start">
         <Research />
-      </div>
-      <div className="snap-start">
+      </Element>
+      <Element name="honors" id="honors" className="snap-start">
         <ProgramsAndHonors />
-      </div>
+      </Element>
     </div>
   );
 }

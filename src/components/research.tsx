@@ -1,5 +1,5 @@
 import React from "react";
-import TextDesc from "./TextDesc";
+import TextDescription from "./text-description";
 
 export default function Research() {
   return (
@@ -7,14 +7,14 @@ export default function Research() {
       <div className="flex flex-col mb-6">
         <h1 className="text-5xl font-bold">research</h1>
       </div>
-      <TextDesc
+      <TextDescription
         time={"dec 2023 - jun 2024"}
         location={"UT Austin Machine Learning Lab"}
         adviser={"Professor Sujay Sanghavi"}
         title={"Turing Scholar Honors Thesis"}
         desc={"ColBERT-style multimodal dense retrieval using OpenAI's CLIP model."}
       />
-      <TextDesc
+      <TextDescription
         time={"jun 2020 - jun 2021"}
         location={"UW Ubiquitous Computing Lab"}
         adviser={"Professor Shwetak Patel"}
@@ -23,7 +23,7 @@ export default function Research() {
           "Diagnosed stroke risk by detecting carotid artery blockage through facial videos."
         }
       />
-      <TextDesc
+      <TextDescription
         time={"dec 2020 - mar 2021"}
         location={""}
         adviser={""}
@@ -34,7 +34,7 @@ export default function Research() {
           "Published our analysis of Miras and variable stars in the Journal of the AAVSO."
         }
       />
-      <TextDesc
+      <TextDescription
         time={"jun 2020 - aug 2020"}
         location={"Summer Science Program in Astrophysics"}
         adviser={"Professor Adam Rengstorf"}
@@ -43,7 +43,7 @@ export default function Research() {
           "Calculated asteroid's six orbital elements and published data in Minor Planet Center (M.P.C.) Report."
         }
       />
-      <TextDesc
+      <TextDescription
         time={"jun 2019 - jun 2020"}
         location={"UW Ubiquitous Computing Lab"}
         adviser={"Professor Shwetak Patel"}

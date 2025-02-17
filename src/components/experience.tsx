@@ -1,5 +1,5 @@
 import React from "react";
-import ImageBox from "./ImageBox";
+import ImageBox from "./image-box";
 
 export default function Experience() {
   const handleClick = () => {
