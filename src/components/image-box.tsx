@@ -8,7 +8,7 @@ interface ImageBoxProps {
 const ImageBox: React.FC<ImageBoxProps> = ({ image_src, onClick }) => {
   return (
     <div
-      className="h-64 border-2 border-black flex justify-center items-center"
+      className="h-48 md:h-64 border-2 border-black flex justify-center items-center"
       onClick={onClick}
     >
       <img

@@ -6,6 +6,13 @@ import Script from "next/script";
 import { Providers } from "@/components/providers";
 import DotNavigation from "@/components/dot-navigation";
 
+export const metadata = {
+  title: "anshita saini",
+  icons: {
+    icon: "favicon.ico",
+  },
+};
+
 const roobert = localFont({
   src: [
     {

@@ -4,7 +4,7 @@ import TextDescription from "./text-description";
 export default function Research() {
   return (
     <main className="flex min-h-screen flex-col relative px-8 md:px-16 lg:px-32 xl:px-64 justify-center">
-      <div className="flex flex-col mb-6">
+      <div className="flex flex-col mb-6 mt-12 md:mt-0">
         <h1 className="text-5xl font-bold">research</h1>
       </div>
       <TextDescription

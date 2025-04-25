@@ -11,7 +11,7 @@ export default function ProgramsAndHonors() {
         <ProgramDescription
           logo_src={"ripple_logo.png"}
           title={"RippleX Founder Fellow"}
-          time={"jan 2024 - now"}
+          time={"jan 2024 - jul 2024"}
         />
         <ProgramDescription
           logo_src={"neo_logo.png"}
@@ -25,17 +25,38 @@ export default function ProgramsAndHonors() {
         />
         <ProgramDescription
           logo_src={"citadel_logo.png"}
-          title={"Discover Citadel & Citadel Securities Invitee"}
+          title={
+            <>
+              <span className="sm:hidden">Discover Citadel</span>
+              <span className="hidden sm:inline">
+                Discover Citadel &amp; Citadel Securities
+              </span>
+            </>
+          }
           time={"apr 2022"}
         />
         <ProgramDescription
           logo_src={"js_logo.png"}
-          title={"Jane Street First-Year Trading and Technology Program"}
+          title={
+            <>
+              <span className="sm:hidden">Jane Street FTTP</span>
+              <span className="hidden sm:inline">
+                Jane Street First-Year Trading and Technology Program
+              </span>
+            </>
+          }
           time={"mar 2022"}
         />
         <ProgramDescription
           logo_src={"g_logo.png"}
-          title={"Google Computer Science Summer Institute"}
+          title={
+            <>
+              <span className="sm:hidden">Google CSSI</span>
+              <span className="hidden sm:inline">
+                Google Computer Science Summer Institute
+              </span>
+            </>
+          }
           time={"jul 2021 - aug 2021"}
         />
 

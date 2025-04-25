@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <main className="flex min-h-screen flex-col relative px-8 md:px-16 lg:px-32 xl:px-64 justify-center">
-      <div className="flex flex-col mb-16">
+      <div className="flex flex-col mb-8 md:mb-16 mt-4 sm:mt-0">
         <h1 className="text-5xl font-bold">about me</h1>
       </div>
-      <div className="flex flex-row items-center justify-left space-x-4 md:space-x-16">
-        <div className="flex-shrink-0 w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden rounded-full">
+      <div className="flex flex-row items-center justify-left sm:space-x-6 md:space-x-16">
+        <div className="flex-shrink-0 w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden rounded-full hidden sm:block">
           <img
             src="/headshot.png"
             alt="headshot"

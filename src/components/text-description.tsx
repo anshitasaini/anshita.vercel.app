@@ -36,14 +36,14 @@ const TextDescription: React.FC<TextDescriptionProps> = ({
           </div>
         )}
         {adviser && (
-          <div className="flex items-center w-full sm:w-auto mt-1 sm:mt-0">
+          <div className="flex items-center w-full sm:w-auto mt-1 sm:mt-0 hidden xs:block">
             <DividerVerticalIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 hidden md:block" />
             <PersonIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" />
             <p className="font-light">{adviser}</p>
           </div>
         )}
       </div>
-      <h1 className="text-lg sm:text-xl font-bold mt-2">{title}</h1>
+      <h1 className="text-lg sm:text-xl font-bold mt-1 sm:mt-2">{title}</h1>
       <h1 className="text-sm sm:text-base font-medium mt-1">{desc}</h1>
       <hr className="border-t border-black w-full my-4 sm:my-6" />
     </div>

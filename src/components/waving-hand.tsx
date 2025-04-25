@@ -10,33 +10,15 @@ const WavingHand = () => {
     rotate: [0, 15, -5, 15, 0],
   };
 
-  const [fontSize, setFontSize] = useState("5rem");
-
-  useEffect(() => {
-    const handleResize = () => {
-      const isSmallScreen = window.innerWidth < 640;
-      const isMediumScreen = window.innerWidth < 768;
-      const fontSize = isSmallScreen
-        ? "2.5rem"
-        : isMediumScreen
-        ? "4rem"
-        : "5rem";
-      setFontSize(fontSize);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <motion.div
-      style={{
-        marginBottom: "-30px",
-        marginRight: "-60px",
-        paddingBottom: "30px",
-        paddingRight: "60px",
-        display: "inline-block",
-        fontSize: fontSize,
-      }}
+      className="
+        inline-block
+        mb-[-30px] mr-[-60px]
+        pb-[30px] pr-[60px]
+        text-[2.5rem]    
+        sm:text-[5rem]     
+      "
       animate={animationControls}
       whileInView={
         (() => {
